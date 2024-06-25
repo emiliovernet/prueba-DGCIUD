@@ -3,7 +3,7 @@
 
 ## Ingresos Tech - Evaluación 2024 - EMILIO VERNET
 
-### 1) a) Crear un servicio RESTful 
+### 1) a) Desarrollar un servicio RESTful 
 
 #### Instrucciones para correr el proyecto
 
@@ -57,7 +57,7 @@ cd prueba-DGCIUD
 
 Colección y entorno disponible [acá](https://github.com/emiliovernet/prueba-DGCIUD/tree/main/postman) 
 
-### 2) Crear una página para de consulta de direcciones
+### 2) Implementar una página de consulta de direcciones
 - Con el proyecto corriendo se pueden testear las siguientes urls:
   - `http://127.0.0.1:8000/normalizar/?direccion=corrientes 100`
   - `http://127.0.0.1:8000/normalizar/?direccion=callao y corrientes, moron`
