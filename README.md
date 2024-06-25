@@ -28,9 +28,13 @@ cd prueba-DGCIUD
  ```bash
  cp .env.example .env
  ```
+5) Genera una clave de aplicación única para Laravel
 
+ ```bash
+ php artisan key:generate
+ ```
 
-5) Crear la base de datos ejecutando las migraciones
+6) Crear la base de datos ejecutando las migraciones
 
  ```bash
  php artisan migrate
