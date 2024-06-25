@@ -1,7 +1,7 @@
 #### Caso 1
 - Ubicarse en la rama dev: `git checkout DEV`
 - Revertir el último commit realizado: `git revert HEAD`
-- En el editor de texto modficar el mensaje del commit si lo desea, guardar y luego cierra el editor.
+- En el editor de texto modficar el mensaje del commit si lo desea, guardar y luego cerrar el editor.
 - Subir la reversión al repositorio remoto: `git push origin DEV`.
 
 
