@@ -59,7 +59,7 @@ cd prueba-DGCIUD
 
 ### 1) b) Crear colección de Postman
 
-Colección y entorno disponible [acá](https://github.com/emiliovernet/prueba-DGCIUD/tree/main/postman) 
+Colección y entorno disponibles [acá](https://github.com/emiliovernet/prueba-DGCIUD/tree/main/postman) 
 
 ### 2) Implementar una página de consulta de direcciones
 - Con el proyecto corriendo se pueden testear las siguientes urls:
