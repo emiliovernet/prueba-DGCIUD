@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "a0ff9a08-fe61-47d1-b402-0d5009864441",
+		"name": "PRUEBA-DGCIUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26441397"
+	},
+	"item": [
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Nombre\",\r\n    \"descripcion\": \"Descripcion\",\r\n    \"precio\": 99.99,\r\n    \"cantidad\": 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}/api/productos",
+						"description": "### Crear un nuevo producto\n\nEste endpoint de tipo POST te permite crear un nuevo producto.\n\n#### Request Body\n\n- `nombre` (string, requerido): Nombre del producto\n- `descripcion` (string): Descripción del producto\n- `precio` (número, requerido): Precio del producto\n- `cantidad` (número entero, requerido): Cantidad del producto."
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{URL}}/api/productos",
+						"description": "### Listar Productos\n\nEste endpoint de tipo GET recibe un listado de todos los productos."
+					},
+					"response": []
+				},
+				{
+					"name": "find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/productos/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"productos",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "string",
+									"description": "El parametro id corresponde al identificador del producto a buscar"
+								}
+							]
+						},
+						"description": "### Mostrar un producto\n\nEste endpoint de tipo GET recibe el detalle de un producto específico a través de su clave ID"
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Nuevo nombre\",\r\n    \"descripcion\": \"Nueva descripciónnnnn\",\r\n    \"precio\": 99.99,\r\n    \"cantidad\": 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/productos/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"productos",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "string",
+									"description": "El parametro id corresponde al identificador del producto a editar"
+								}
+							]
+						},
+						"description": "### Actualizar un producto\n\nEste endpoint de tipo PUT te permite actulizar un producto existente a través de su clave ID.\n\n#### Request Body\n\n- `nombre` (string, requerido): Nombre del producto\n    \n- `descripcion` (string): Descripción del producto\n    \n- `precio` (número, requerido): Precio del producto\n    \n- `cantidad` (número entero, requerido): Cantidad del producto."
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/productos/:id",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"productos",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "string",
+									"description": "El parámetro id corresponde al identificador del producto a eliminar"
+								}
+							]
+						},
+						"description": "### Eliminar un producto\n\nEste endpoint de tipo DELETE elimina un producto específico a través de su clave ID."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
