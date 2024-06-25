@@ -5,7 +5,11 @@
 
 ### 1) a) Desarrollar un servicio RESTful 
 
-#### Instrucciones para correr el proyecto
+#### Instrucciones para correr el proyecto:
+
+#### Requerimientos
+- PHP versión 8.2 o superior.
+- Composer 2.3 o superior.
 
 1) Clonar el proyecto
 
