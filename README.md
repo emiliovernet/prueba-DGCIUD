@@ -26,7 +26,7 @@ cd prueba-DGCIUD
 4) Crear un archivo .env a partir del archivo de ejemplo ".env.example"
 
  ```bash
- copy .env.example .env
+ cp .env.example .env
  ```
 
 
